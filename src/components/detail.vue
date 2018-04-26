@@ -1,5 +1,5 @@
 <template>
-  <div class="detail">
+  <div class="detail" v-loading.body="loading">
     <div class="back" @click="close"><i class="el-icon-error" style="color: #ffffff;font-size: 30px"></i></div>
     <div v-show="show" id="showVideo"></div>
     <div v-show="!show" class="img">
@@ -45,7 +45,9 @@
             this.player = polyvObject('#showVideo').videoPlayer({
               'width': '100%',
               'height': videoHeight,
-              'vid': this.vid
+              'vid': this.vid,
+              'ts': res.info.ts,
+              'sign': res.info.sign
             })
             this.player.j2s_resumeVideo()
           } else if (this.img) {
