@@ -219,6 +219,36 @@
     display: flex;
     flex-direction: column;
   }
+  .logo{
+    width: 70px;
+    height: 75px;
+    position: fixed;
+    background-color: transparent;
+    right: 0;
+    bottom: 10%;
+    z-index: 10;
+  }
+  .logo .b-button{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border: solid 1px #e0e0e0;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .logo .btnClose{
+    width: 20px;
+    height: 20px;
+    line-height:20px;
+    margin:5px auto 0;
+    text-align:center;
+    color: #FF0000;
+    border-radius:50%;
+    border: solid 1px #FF0000
+  }
+
 
   .hello .content {
     flex: 1;
@@ -248,5 +278,74 @@
     background-color: #b9e2ff;
     margin: 3px;
     border-radius: 3px;
+  }
+  .hello .img-container {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-self: center;
+    background-color: transparent;
+    margin-top: 15px;
+  }
+
+  .hello .img-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .hello .tuijian-container {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+  }
+  .hello .tuijian-container .tuijian-parent{
+    float: left;
+    box-sizing: border-box;
+    width: 45.5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .tuijian-title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    height: 40px;
+    margin-top: 5px;
+    text-align: left;
+  }
+  .hello .tuijian-container .tuijian-parent:nth-child(2n){
+    margin-left: 0;
+  }
+  /*.hello .tuijian-container .tuijian-parent:nth-child(3){*/
+  /*padding: 0 1px 2px 2px;*/
+  /*}*/
+  /*.hello .tuijian-container .tuijian-parent:nth-child(4){*/
+  /*padding: 0 2px 2px 1px;*/
+  /*}*/
+  .hello .tuijian-container .tuijian-image img {
+    width: 100%;
+    height: 100%;
   }
 </style>

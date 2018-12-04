@@ -118,7 +118,7 @@
     padding: 0 20px;
     font-size: 13px;
     color: #fff;
-    background-color: #038384;
+    background-color: #45a0e1;
     z-index: 1;
   }
 
